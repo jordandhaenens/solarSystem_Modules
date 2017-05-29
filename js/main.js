@@ -11,11 +11,11 @@ let mercury = require('./mercury'),
 	$ = require('jquery');
 
 
-mercury.outputTo($('#mercury'));
-mars.outputTo($('#mars'));
-venus.outputTo($('#venus'));
-saturn.outputTo($('#saturn'));
-jupiter.outputTo($('#jupiter'));
-neptune.outputTo($('#neptune'));
-uranus.outputTo($('#uranus'));
+mercury.outputTo($('#solarSystem'));
+mars.outputTo($('#solarSystem'));
+venus.outputTo($('#solarSystem'));
+saturn.outputTo($('#solarSystem'));
+jupiter.outputTo($('#solarSystem'));
+neptune.outputTo($('#solarSystem'));
+uranus.outputTo($('#solarSystem'));
 
