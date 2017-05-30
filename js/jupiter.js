@@ -11,31 +11,16 @@ let dataObj = {
 	distToSun: "distToSun",
 	atmosphere: "atmosphere",
 	satellites: ["you", "me", "she"],
-	visitors: ["here", "there", "where"]
+	visitors: ["abe", "there", "where"]
 };
 
-function outputTo(domElement) {
-	let string = `<h3>${dataObj.name}</h3><p>Discovered in ${dataObj.discovered}</p>
-				<p>Mass: ${dataObj.mass}</p><p>Size: ${dataObj.size}</p>
-				<p>Distance from the Sun: ${dataObj.distToSun}</p>
-				<p>Atmospheric composition: ${dataObj.atmosphere}</p>
-				<p>Natural Satellites: `;
-	dataObj.satellites.forEach(function(currVal){
-		string += `${currVal} `;
-	});
-	string += `</p><p>Visitors to ${dataObj.name}:`;
-	dataObj.visitors.forEach(function(currVal){
-		string += ` ${currVal}`;
-	});
-	string += `</p>`;
-
-	$(domElement).append(string);
+function data(){
+	return dataObj;
 }
 
 
 
 
 
-
-module.exports = {outputTo};
+module.exports = {data};
 
